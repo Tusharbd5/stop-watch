@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Functions from './components/Functions/Functions';
+import '../src/components/Custom-css/App.css';
+import About from './components/About/About';
+import { useState } from 'react';
 
 function App() {
+  const [openModal, setopenModal] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: 'purple' }}>
+      <div style={{ marginLeft: '50px' }}>
+        <button onClick={() => setopenModal(true)} className='dev-button'>About Developer</button>
+        {
+          openModal && <About setopenModal={setopenModal}>
+          </About>
+        }
+      </div>
+      <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }} className="App">
+        <Functions></Functions>
+      </div>
     </div>
   );
 }

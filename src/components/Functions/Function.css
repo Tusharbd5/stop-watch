@@ -1,0 +1,14 @@
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.function {
+    background-color: white;
+    width: max-content;
+    padding: 20px;
+    height: max-content;
+    border-radius: 20px;
+}
+
+.function h1 {
+    font-family: 'Roboto', sans-serif;
+}

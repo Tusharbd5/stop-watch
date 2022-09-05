@@ -1,0 +1,62 @@
+/* Bebus Nue font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.display-time span {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    border: 1px solid purple;
+    padding: 20px;
+}
+
+.display {
+    margin-top: 50px;
+}
+
+.buttons {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.dis-button {
+    padding: 10px 15px;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    opacity: 20%;
+}
+
+@media screen and (max-width: 650px) {
+    .display-time span {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 7px 12px;
+        border-radius: 5px;
+    }
+
+    .dis-button {
+        font-size: 12px;
+        padding: 7px 12px;
+        border-radius: 5px;
+    }
+}

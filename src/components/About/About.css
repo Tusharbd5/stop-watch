@@ -1,0 +1,40 @@
+.developer-detail img {
+    border-radius: 50%;
+    border: 1px solid #ffb77c;
+    box-shadow: 0 0 30px lightgray;
+    margin-top: 50px;
+
+}
+
+.education {
+    color: white;
+}
+
+.developer .title {
+    color: white;
+}
+
+.live-projects {
+    color: white;
+}
+
+.live-projects h2 {
+    font-size: 18px;
+}
+
+.close-btn {
+    padding: 5px 10px;
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 710px) {
+    .developer-detail img {
+        width: 50%;
+    }
+}
